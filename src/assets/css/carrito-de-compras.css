@@ -1,0 +1,36 @@
+/*=============================================
+CARRITO DE COMPRAS
+=============================================*/
+.cabeceraCarrito{
+	height:40px;
+}
+
+.cabeceraCarrito h3{
+	margin-top:-5px
+}
+
+.cabeceraCheckout{
+	height:66px;
+}
+
+/*=============================================
+CHECKOUT
+=============================================*/
+
+.contenidoCheckout, .contenidoCheckout .row{
+	padding:0px 20px;
+}
+
+.formEnvio{
+	display:none;
+}
+
+
+.gip:hover .imagen {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.gip {
+	overflow: hidden;
+}
