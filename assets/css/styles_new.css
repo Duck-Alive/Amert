@@ -1,0 +1,708 @@
+@font-face {
+    font-family: 'Abrade-Book';
+    src: url('../fonts/Abrade/Book/Abrade-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Abrade/Book/Abrade-Book.otf') format('opentype'), url('../fonts/Abrade/Book/Abrade-Book.woff') format('woff'), url('../fonts/Abrade/Book/Abrade-Book.ttf') format('truetype'), url('../fonts/Abrade/Book/Abrade-Book.svg#Abrade-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Abrade-Medium';
+    src: url('../fonts/Abrade/Medium/Abrade-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Abrade/Medium/Abrade-Medium.otf') format('opentype'), url('../fonts/Abrade/Medium/Abrade-Medium.woff') format('woff'), url('../fonts/Abrade/Medium/Abrade-Medium.ttf') format('truetype'), url('../fonts/Abrade/Medium/Abrade-Medium.svg#Abrade-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Abrade-Ultra';
+    src: url('../fonts/Abrade/Ultra/Abrade-Ultra.eot?#iefix') format('embedded-opentype'), url('../fonts/Abrade/Ultra/Abrade-Ultra.otf') format('opentype'), url('../fonts/Abrade/Ultra/Abrade-Ultra.woff') format('woff'), url('../fonts/Abrade/Ultra/Abrade-Ultra.ttf') format('truetype'), url('../fonts/Abrade/Ultra/Abrade-Ultra.svg#Abrade-Ultra') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Abrade-UltraItalic';
+    src: url('../fonts/Abrade/UltraItalic/Abrade-UltraItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Abrade/UltraItalic/Abrade-UltraItalic.otf') format('opentype'), url('../fonts/Abrade/UltraItalic/Abrade-UltraItalic.woff') format('woff'), url('../fonts/Abrade/UltraItalic/Abrade-UltraItalic.ttf') format('truetype'), url('../fonts/Abrade/UltraItalic/Abrade-UltraItalic.svg#Abrade-UltraItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+{
+    font-family: "Abrade-UltraItalic";
+}
+{
+    font-family: "Abrade-Ultra";
+}
+{
+    font-family: 'Oswald', sans-serif;
+}
+/** Vertical Alignment **/
+
+{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/** Decoration Navigation **/
+@media only screen and (min-width: 766px) {
+	.nav-primary li.deco-nav-collections ul.nav-cols {
+		width: 500px;
+	}
+	.nav-primary li.deco-nav-collections ul.nav-cols > li.level1, 
+	.nav-primary li.deco-nav-collections ul.nav-cols ul.level1 li.level1 {
+    width: 100%;
+	}
+	.nav-primary li.deco-nav-collections ul {
+		width: 550px;
+		padding: 26px 20px 25px 25px;
+		min-height: 225px;
+	}
+	.nav-primary li.deco-nav-collections ul.nav-cols ul.level1 {
+		width: 50%;
+		float: left;
+	}
+}
+
+/*** Welcome Screen ***/
+.hello{
+	margin-bottom: 5px;
+}
+.boxed {
+	border: 2px solid #e11a38;
+	padding: 4px 4px 4px 8px;
+}
+
+
+
+/** Cart Tooltip **/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #006080;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: #FFF;
+    color: #000;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -175px;
+    opacity: 0;
+    transition: opacity 0.8s; 
+	border: 1px solid #888;
+	box-shadow:0px 5px 10px grey;
+}
+.tooltip-bottom {
+    top: 135%;
+    left: 50%;
+    margin-left: -175px;
+}
+.tooltip-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #111 transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip h2 {
+	margin-bottom: 8px;
+}
+/** End Cart Tooltip **/
+
+/** Cart Notice **/
+.cart-note {
+	text-align: left;
+	font-size: larger;
+    font-weight: bold; 
+}
+/** End Cart Notice **/
+
+/** Cat-promos **/
+
+.promo {
+    position: relative;
+    text-align: center;
+}
+.promo .product-name,
+.cp-desc > span {
+    font-family: 'Oswald', sans-serif;
+}
+.promo .product-name {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    color: #464646;
+    font-size: 16px;
+}
+.promo .sku {
+    color: #464646;
+    font-size: 16px;
+    font-family: 'Abrade-UltraItalic';
+}
+.promo .customize_actions {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.promo .LargeSubHeadings,
+.cst-pdp-promo .promo-box {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+.promo .LargeSubHeadings {
+    color: #fff;
+    font-size: 58px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.cp-desc {
+    bottom: 32px;
+    font-size: 18px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.cp-desc > span {
+    color: #fff;
+    text-transform: uppercase;
+}
+/** Cat-promos end **/
+/** Cust-PDP-promos **/
+
+.cst-pdp-promo {
+    position: relative;
+    text-align: center;
+}
+.cst-pdp-promo .title {
+    left: 0;
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+.cst-pdp-promo .SecLargeSubHeadings.slider-description > p {
+    color: #fff;
+}
+.cst-pdp-promo .promo-box {
+    left: 77px;
+    max-width: 398px;
+    position: absolute;
+    text-align: left;
+}
+.cst-pdp-promo.Design .promo-box {
+    left: auto;
+    right: 230px;
+}
+/** Cust-PDP-promos end **/
+
+
+/**** Contact Us Page ****/
+.contact_container .content-wrap h6 {
+	color: #000;	
+}
+.content-wrap a.PrimaryCTA {
+	font-family: 'Abrade-UltraItalic' !important;
+}
+.larger {
+	font-size: large !important;
+}
+a.faq-link {
+	background: #e11a38;
+}
+a.faq-link:hover {
+	background: #666666 !important; 
+}
+@media only screen and (max-width: 766px) {
+	.black-text {
+		color: #000 !important;
+	}
+}
+/**** End Contact Us Page ****/
+
+
+/**** FAQs Page ****/
+.faq { 
+	margin-left: 45px;
+}
+.CmsCatalog h3 { 
+	font-size: 20px;
+	font-family: 'Abrade-Ultra';
+}
+.CmsCatalog ul { 
+	list-style-type: disc; 
+	list-style-position: inside;
+}
+/**** End FAQs Page ****/
+
+.design-msg {
+	padding-top: 10px;
+}
+
+/****  Checkout UPS Note  ****/
+
+.red {
+	color: #e11a38 !important;
+}
+.extra-padding {
+	width: 50%;
+	float: left;
+	padding: 10px 0 0 20px;
+}
+@media only screen and (max-width: 1270px) {
+	.extra-padding {
+		width: 100%;
+		padding: 15px 0 0 0;
+	}
+}
+
+/**** end Checkout Note ****/
+
+/*** Banner title right ***/
+body.category-lifestyle-structured .content-wrap,
+body.category-lifestyle-unstructured .content-wrap,
+body.category-styles-mesh-back .content-wrap,
+body.category-lifestyle-street .content-wrap{
+	float:right;
+}
+
+body.category-outdoor h1,
+body.category-beanies h1,
+body.category-beanies .category-description p span,
+body.category-team .category-description {
+	text-shadow: 2px 2px 8px #7a7a7a;
+}
+
+/*** New Dealer Page ***/
+/*.account-page .ac-text-content {
+    max-width: 870px !important;
+}*/
+/*** End New Dealer ***/
+/**** New Dealer Account Page ****/
+.account-page .ac-text-content {
+    margin: 0 auto 30px;
+}
+.account-page .tag-image {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.account-page .page-title {
+    display: inline-block;
+	position: absolute;
+    top: 30px;
+    margin-left: 20px;
+}
+.account-page .ac-text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+	margin: 10px;
+}
+.account-page .bullet-points {
+	margin-left: 15px;
+}
+.account-page ul {
+    list-style-type: disc;
+	padding: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/**** End New Dealer Account Page ****/
+#search {
+    padding-right: 0;
+}
+/***** Add Temporary Dealer Locator Nav Link *****/
+
+.top-links li.link-locator .links-icon {
+    background-position: -75px -25px;
+}
+.top-links li.link-locator:hover .links-icon {
+    background-position: -50px -25px;
+}
+@media only screen and (max-width: 766px) {
+	.top-links > li {
+		width: 20%;
+	}
+}
+/**** End Dealer Locator Nav Link ****/
+
+.assembled-block.pdp .block-valign {
+    max-width: 778px;
+}
+.assembled-block.pdp .LargeIntro .XLargeHeadings {
+    font-size: 36px;
+}
+
+
+.vd-stl-main {
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
+}
+
+.team-letters-preview {
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 200px;
+}
+.team-letters-preview.hundred{
+	margin: 0 auto;
+    width: 100px;
+}
+.view-decoration-stl {
+    padding-top: 30px;
+}
+.team-letters-icon {
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+	vertical-align: middle;
+}
+.team-letters-icon h3 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.view-decoration-name-drop {
+    padding: 50px 0 0;
+}
+.name-drop-preview .zoom > img {
+    margin: 0 auto;
+}
+.nd-main {
+    display: inline-block;
+    margin: 0 2%;
+    text-align: center;
+    width: 20%;
+}
+.name-drop-content h6 {
+    display: inline;
+    width: 59px;
+}
+.field-item.odd {
+    display: inline;
+}
+.name-drop-content h3 {
+    display: block;
+    margin-bottom: 3px;
+}
+.name-drop-preview .thumbnail {
+    margin: 0 auto;
+}
+.stock-wording-title {
+    text-align: center;
+	padding-left: 45px;
+}
+.team-letters-font-decoration {
+    padding-left: 125px;
+}
+.ms-obj-main {
+    display: inline-block;
+	font-family: Abrade-Medium;
+    max-width: 250px;
+    width: 15%;
+}
+.mascot-title {
+    margin: 10px 0;
+}
+.view-decoration-mascots {
+    text-align: center;
+}
+
+.lightbox > img {
+    margin: 0 auto 10px;
+}
+
+.grid > table {
+    margin-bottom: 25px;
+}
+.grid > table td {
+    font-size: 16px;
+	margin: 20px 0;
+}
+.grid > table td span {
+    margin: 5px 6px;
+}
+.grid > table td label {
+	font-size: 12px;
+}
+.grid > table td select {
+	height: 30px;
+	background-size:30% auto;
+}
+
+.filters .company-filter, 
+.filters .date-filter {
+	position:relative;
+}
+.filters .company-filter:after, 
+.filters .date-filter:after {
+	position:absolute;
+	background-image: url('../images/select-arrow.png');
+	background-repeat:no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    right: -4px;
+    top: 10px;
+    width: 25px;
+    height: 20px;
+    content:"";
+}
+.filters .company-filter select, 
+.filters .date-filter select {
+	background:none;
+	padding: 0 28px 0 10px;
+	height: 30px;	
+}
+.grid > table td .input-text.page/*, 
+input.input-text*/{
+	height: 30px;
+	padding: 0 20px 0 8px;
+}
+
+.cms-design-concepts .thumbnail a {
+    display: block;
+    min-height: 120px;
+}
+
+.cms-design-concepts .name-drop-content {
+    margin-bottom: 10px;
+    min-height: 30px;
+}
+.white_content{ top:115px;}
+
+
+.fancybox-lock body, .lightbox-lock body {
+    overflow: visible !important;
+}
+.vd-stl-main {
+    display: block;
+    margin: 10px;
+    width: 100%;
+}
+.team-letters-preview, .team-letters-preview.hundred {
+    margin: 0 auto 20px;
+    text-align: left;
+    width: 100%;
+}
+.stock-wording-title h1, 
+.stock-team-title h1	{
+	font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-transform: uppercase;
+	padding-left:35px
+}
+
+.customer-account-changeforgotten .form-list > li.fields .field {
+    float: none;
+    margin-left: 0;
+    width: 50%;
+}
+.customer-account-login .col2-set .col-1.new-users {
+    border-right: 20px solid #fff;
+    position: relative;
+    right: -20px;
+}
+.plumtree-onlinedealer-index-index .scaffold-form .buttons-set button.button, 
+.customer-account-changeforgotten .scaffold-form .buttons-set button.button {
+    float: none;
+
+}
+.plumtree-onlinedealer-index-index .scaffold-form .buttons-set, 
+.customer-account-changeforgotten .scaffold-form .buttons-set{
+	text-align:left;
+	 margin: 10px 0;
+}
+.plumtree-onlinedealer-index-index p.required, 
+.customer-account-changeforgotten p.required {
+   display: none;
+}
+
+.stock-cu-show-more-btn, 
+.stock-ce-show-more-btn, 
+.stock-cc-show-more-btn {
+    background: #e11a38;
+    color: #fff;
+    font-size: 12px;
+    padding: 11px;
+    transition: all 0.5s ease 0s;
+	opacity:1;
+}
+.stock-cu-show-more-btn:hover, 
+.stock-ce-show-more-btn:hover, 
+.stock-cc-show-more-btn:hover {
+    opacity:0.7;
+    transition: all 0.5s ease 0s;
+}
+/**** Footer Social Icons ****/
+.footer .footer_social ul li {
+    float: left;
+    margin-left: 28px;
+}
+
+/**** Customize Page *******/
+.select-customization > h2 {
+	padding-top: 25px !important;
+}
+.select-customization .product-collateral .toggle-tabs li > span {
+	line-height: 1.1em;	
+	/*margin-bottom: 90px;*/
+}
+.select-customization .toggle-tabs {
+    padding-bottom: 33px;
+}
+.select-customization .toggle-tabs li.current span img {
+    filter: none;
+    padding: 0;
+}
+.select-customization .toggle-tabs li span img {
+	margin: 0 auto;
+	-webkit-filter: grayscale(100%);
+	filter: gray;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	max-width: 113px;
+	padding: 0 15px;
+}
+.customDescription {
+    color: #6c6c6c !important;
+    line-height: 1.3em;
+    letter-spacing: 0.1em;
+    font-family: "Oswald" !important;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 2em; 
+}
+.customDescription:hover {
+	color: #6c6c6c;
+}
+
+.disclaimer {
+	color: #CF132B !important;
+	font-weight: 900;
+}
+.product-collateral .toggle-tabs li > span {
+    height: 60px
+}
+
+/**** End Customize Page *******/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cp-desc {
+        bottom: 15px;
+        font-size: 13px;
+    }
+    .promo .LargeSubHeadings {
+        font-size: 40px;
+    }
+    .cst-pdp-promo.Design .promo-box {
+        right: 190px;
+    }
+	.my-account .filters {
+		margin: 10px 0;
+		text-align: unset;
+	}
+	.select-customization .toggle-tabs {
+		padding-bottom: 63px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 920px) {
+	.select-customization .toggle-tabs {
+		padding-bottom: 93px;
+	}
+}
+@media only screen and (max-width: 767px) {
+    .cst-pdp-promo .promo-box,
+    .cst-pdp-promo.Design .promo-box {
+        left: 0;
+        max-width: 100%;
+        position: static;
+        right: 0;
+        text-align: center;
+        transform: translateY(0px);
+        padding: 25px 0;
+    }
+    .cst-pdp-promo .SecLargeSubHeadings.slider-description > p {
+        color: #000;
+    }
+    .cst-pdp-promo .SecLargeSubHeadings.slider-description {
+        margin: 20px 0 0;
+    }
+    .cst-pdp-promo .is_mobile {
+        display: block;
+    }
+    .cst-pdp-promo img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .LargeIntro.block-description.block-valign br {
+        display: none;
+    }
+    .assembled-block.pdp .LargeIntro .XLargeHeadings {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+	.ms-obj-main {
+		width: 30%;
+	}
+	.team-letters-font-decoration,
+	.stock-wording-title, 
+	.stock-team-title h1 {
+	padding-left: 0;
+}
+
+}
+@media only screen and (max-width: 480px){
+	.vd-stl-main {
+		display: inline-block;
+		margin: 0;
+		width: 100%;
+	}
+	.nd-main {
+		width: 100%;
+	}
+	.ms-obj-main {
+		width: 48%;
+	}
+	.mascot-preview .thumbnail {
+    margin: 0 auto;
+    max-width: 120px;
+    text-align: center;
+	}
+	.footer .footer_social ul li {
+		float: left;
+		margin-left: 20px;
+	}
+}
+
+/**** Email Settings ****/
+.boxsizingBorder {
+    width: 100%;
+    max-width: 100%;
+}

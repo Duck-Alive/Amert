@@ -1,0 +1,252 @@
+/*=============================================
+TOP
+=============================================*/
+	#headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 75px;
+		
+
+	}	
+	.headerPrincipal{
+		position: relative;
+		width: 100px;
+		height: 200px;
+		
+
+	}
+
+	.social ul li a i{
+	font-size:18px;
+	margin:0 1px;
+}
+
+.registro ul{
+	text-align: right;
+	font-size:12px;
+}
+
+/*=============================================
+HEADER
+=============================================*/
+
+header #btnCategorias{
+	margin:10px 0;
+}
+
+header #btnCategorias p{
+	line-height:46px;
+	margin-bottom:0px;
+}
+
+header #btnCategorias p span{
+	cursor: pointer;
+}
+
+
+
+
+#carrito{
+	position: relative;
+	margin-top:-30px;
+	width: 100px;
+}
+
+#carrito button{
+	position: relative;
+	border:1px solid silver;
+	border-radius:50%;
+	color: black;
+}
+
+
+
+
+/*=============================================
+ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
+=============================================*/
+
+@media (min-width:1200px){
+	.headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 175px;
+		
+
+	}
+	/*=============================================
+	HEADER
+	=============================================*/
+
+
+	
+	.modalFormulario .facebook p{
+		margin-right:-15px;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+	.headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 175px;
+		
+
+	}
+
+
+	.modalFormulario .facebook p{
+		margin-right:-15px;
+	}
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	/*=============================================
+	HEADER
+	=============================================*/
+	.headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 125px;
+		
+
+	}
+
+	.modalFormulario .facebook p{
+		margin-right:-15px;
+	}
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px){
+
+	/*=============================================
+	TOP
+	=============================================*/
+
+	
+	/*=============================================
+	HEADER
+	=============================================*/
+/*
+	header #logotipo img{
+		padding:0px;
+		padding-bottom:10px;
+	}*/
+	.headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 125px;
+		
+
+	}
+	header #categorias{
+		margin-bottom:0px;
+	}
+
+
+	.modalFormulario .google p{
+		margin-top:-15px;
+	}
+	
+}
+
+
+@media (max-width:560px){
+
+	.headerPrincipal{
+		position: relative;
+		width: 100%;
+		height: 125px;
+		
+
+	}
+
+
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font: 14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+.cntr {
+	display: inline-flex;
+	top: 20%;
+	left: -20%;
+}
+.cntr .cntr-innr {
+	display: table-cell;
+	text-align: center;
+}
+/*** STYLES ***/
+.search {
+	display: inline-block;
+	position: relative;
+	height: 25px;
+	width: 25px;
+	box-sizing: border-box;
+	margin: 0px 4px 4px 0px;
+	padding: 3px 5px 0px 5px;
+	border: 3px solid red;
+	border-radius: 20px;
+	transition: all 200ms ease;
+	cursor: text;
+}
+.search:after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 8px;
+	right: -5px;
+	top: 20px;
+	background: red;
+	border-radius: 3px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	transition: all 200ms ease;
+}
+.search.active,
+.search:hover {
+	width: 150px;
+	height: 40px;
+	margin-right: 0px;
+}
+.search.active:after,
+.search:hover:after {
+	height: 0px;
+}
+.search input {
+	width: 50%;
+	border: none;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	font-size: 10px;
+	color: inherit;
+	background: transparent;
+	outline-width: 0px;
+}

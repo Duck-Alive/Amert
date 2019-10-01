@@ -2,15 +2,31 @@
 	  <div class="container">
 	    <div class="bottom-footer-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
 	      <ul class="bottom-social-icons">
-	        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-	        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-	        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+	        <li><a target="_blank" [href]="_servicio.info.facebook" class="rk-social-btn ">
+	            <svg style="width: 30px; height:30px;">
+	              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
+	            </svg>
+			  </a>
+			</li>
+	        <li><a target="_blank" [href]="_servicio.info.twitter" class="rk-social-btn ">
+	            <svg style="width: 30px; height:30px;">
+	              <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
+	            </svg>
+			  </a>
+			</li>
+	        <li><a target="_blank" [href]="_servicio.info.instagram" class="rk-social-btn btn-sm">
+	          <svg style="width: 30px; height:30px;">
+	            <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
+	          </svg>
+			  </a>
+			</li>
 	      </ul>
 	    </div>
 	    <div class="bottom-footer-left wow fadeInUp" data-wow-duration="1s" data-wow-delay="450ms">
-	      <p><span>Todos los derechos reservados por &#169; </span> <a href="https://duckalive.com">Duckalive S.A. de
-	          C.V.</a></p>
-	      <p><span>Página licenciada para su uso a &#169; </span> <a href="https://amertac.com.mx">AMERT, A.C.</a></p>
+	      <p><span>Todos los derechos reservados por &#169; </span> <a href="mailTo:{{ _servicio.info.email }}"
+	          class="rk-dark-color "> {{ _servicio.info.email }}</a></p>
+	      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">
+	          {{ anio }} Duck Alive </span>All Right Reserved.</p>
 	    </div>
 	  </div>
 	</div>

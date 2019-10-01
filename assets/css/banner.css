@@ -1,0 +1,501 @@
+
+@media (min-width:1200px) {
+
+
+    .fixed-action-btn {
+        bottom: 100px !important;
+    }
+
+    #nav {
+        background: none !important;
+        zoom: 0.9 !important;
+        height: 50px !important;
+    }
+
+
+    .imagenH {
+        position: relative;
+        width: 200px !important;
+        font-size: 22px !important;
+        font-weight: bold !important;
+    }
+
+    .pageHeader {
+        position: fixed;
+    }
+
+
+
+    .quick-access {
+        z-index: 99999 !important;
+        padding: 0px !important;
+        height: 50px !important;
+    }
+
+
+
+
+    .separa {
+        height: 25vh !important;
+    }
+
+
+    .colorSelect {
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-block !important;
+        margin: 5px !important;
+        cursor: pointer !important;
+        border-radius: 50px !important;
+        border: 1px solid white;
+
+    }
+
+
+
+
+    .content_ figure {
+
+        background: rgba(252, 252, 252, 0.5)
+    }
+
+
+
+
+    .pageHeader {
+    position: relative;
+    left: 0;
+    display: flex;
+    top:0px;
+    right: 0;
+    background: none;
+}
+
+    .mundo {
+        position: relative;
+        font-size: 15vh;
+        text-align: center;
+        font-family: 'Pacifico', cursive;
+        top: 20px;
+        color:#FE0005;
+        text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
+
+
+
+.content_ {
+    position: relative;
+    width: 100%;
+    height:20vh;
+    background: url(mapa1.png);
+    overflow: hidden;
+    -webkit-animation-name: rotacion;
+    animation-name: rotacion;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+.content_ .diV {
+    background:rgba(250, 165, 165, 0.158);
+     width: 100%;
+    height: 100%;
+}
+
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px) {
+
+.pageHeader {
+    position: fixed;
+
+}
+
+.fixed-action-btn {
+    bottom: 100px !important;
+}
+
+
+.content_ figure {
+
+    background: rgba(252, 252, 252, 0.5)
+}
+
+.quick-access {
+    z-index: 99999 !important;
+    padding: 0px !important;
+    height: 40px !important;
+}
+
+.separa {
+    height: 20vh !important;
+}
+
+
+
+
+
+
+
+.destacada img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#nav {
+    zoom: 1 !important;
+    height: 40px !important;
+}
+
+
+.pageHeader {
+    position: relative;
+    left: 0;
+    display: flex;
+    top: 0px;
+    right: 0;
+    z-index: 1000;
+}
+
+    .mundo {
+        position: relative;
+        font-size: 10vh;
+        text-align: center;
+        font-family: 'Pacifico',
+            cursive;
+        top: 20px;
+        z-index: 9999999999 !important;
+        left: 10vh;
+        color: #FE0005;
+        text-shadow: 0px 0px 15px rgb(255, 255, 255);
+    }
+
+.content_ {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: url(mapa1.png);
+    overflow: hidden;
+    -webkit-animation-name: rotacion;
+    animation-name: rotacion;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+
+
+}
+
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px) {
+.pageHeader {
+    position: fixed;
+}
+
+.fixed-action-btn {
+    bottom: 100px !important;
+}
+
+.imagenHover a {
+    text-decoration: none !important;
+    position: relative !important;
+    width: 100% !important;
+    min-width: 160px;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+.imagenH {
+    position: relative;
+    width: 200px !important;
+    font-size: 22px !important;
+    font-weight: bold !important;
+}
+
+.content_ figure {
+    background: rgba(252, 252, 252, 0.5)
+}
+
+
+
+
+.separa {
+    height: 15vh !important;
+}
+
+
+
+
+
+#nav {
+    zoom: 0.9 !important;
+}
+
+
+.quick-access {
+    z-index: 99999 !important;
+    padding: 0px !important;
+    height: 40px !important;
+     margin-top: -100px !important;
+}
+
+
+.pageHeader {
+    position: relative;
+    left: 0;
+    display: flex;
+    top: 0px;
+    right: 0;
+    z-index: 1000;
+}
+
+    .mundo {
+        position: relative;
+        font-size: 10vh;
+        text-align: center;
+        font-family: 'Pacifico',
+            cursive;
+        top: 10px;
+        z-index: 9999999999 !important;
+        left: 10vh;
+        color: #FE0005;
+        text-shadow: 0px 0px 15px rgb(255, 255, 255);
+    }
+
+.content_ {
+    position: relative;
+    width: 100%;
+    background: url(mapa1.png);
+    overflow: hidden;
+    -webkit-animation-name: rotacion;
+    animation-name: rotacion;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+
+
+}
+
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+
+@media (max-width:767px) {
+
+    .nav-primary li.level0>a {
+          color:#4d4d4d;
+      }
+      .nav-primary li.level0>a:hover {
+          color: #ff0000;
+      }
+    .fixed-action-btn {
+        z-index: 21474836471 !important;
+        bottom: 100px !important;
+    }
+
+.pageHeader {
+    position: fixed;
+
+}
+
+
+
+       .mundo {
+           position: relative;
+           font-size: 13vh;
+           text-align: center;
+           vertical-align: middle;
+           top: 20px;
+           left: 10vh;
+           color: #FE0005;
+           text-shadow: 0px 0px 5px #333;
+       }
+
+.content_ {
+    position: relative;
+    width: 100%;
+    background: url(mapa1.png);
+    -webkit-animation-name: rotacion;
+    animation-name: rotacion;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+
+
+}
+
+.content_ figure {
+
+    background: rgba(252, 252, 252, 0.5)
+}
+
+.separa {
+    height: 10vh !important;
+}
+
+
+
+.quick-access {
+    border-top: 1px solid rgb(139, 135, 135) !important;
+    height: 40px !important;
+}
+
+.top-links {
+    height: 20px !important;
+
+}
+
+.grid0 {
+    zoom: 0.8 !important;
+}
+
+
+.colorSelect {
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    margin: 5px !important;
+    cursor: pointer !important;
+    border-radius: 50px !important;
+    border: 1px solid white;
+
+}
+
+
+
+#nav {
+    zoom: 0.9 !important;
+}
+.pageHeader {
+    position: fixed;
+    left: 0;
+    display: flex;
+    top: 100px;
+    right: 0;
+    display: none;
+}
+
+.page-header{
+position: fixed;
+left: 0;
+right: 0;
+z-index: 1000;
+}
+
+      .mundo {
+          position: relative;
+          font-size: 7vh;
+          text-align: center;
+          vertical-align: middle;
+          top: 10px;
+          left: 2vh;
+          color: #FE0005;
+          text-shadow: 0px 0px 5px #333;
+      }
+
+    .content_ {
+        position: relative;
+        width: 100%;
+        height: 10vh !important;
+        background: url(mapa1.png);
+        overflow: hidden;
+        -webkit-animation-name: rotacion;
+        animation-name: rotacion;
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        z-index: 9999;
+
+
+    }
+
+
+
+.quick-access ul li a{
+  position: relative !important;
+  padding: 0 !important;
+  width: 100% !important;
+  margin-top: -1px !important;
+  height: 100% !important;
+
+}
+.quick-access ul li a span
+{
+  position: relative !important;
+  padding: 0 !important;
+  font-size: 4vh !important;
+  text-align: center !important;
+  margin: 25% !important;
+  padding: 5px !important;
+}
+.novisible{
+  display: none;
+}
+
+.quick-access ul{
+  position: relative;
+  height: 100% !important;
+
+
+}
+}
+
+
+
+@-webkit-keyframes rotacion {
+
+    0% {
+        background-position: 0px 0px;
+
+    }
+
+    100% {
+        background-position: -1480px 0px;
+
+    }
+}
+
+@keyframes rotacion {
+
+    0% {
+        background-position: 0px 0px;
+
+    }
+
+    100% {
+        background-position: -1480px 0px;
+
+    }
+}
