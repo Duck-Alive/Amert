@@ -1,0 +1,102 @@
+<div class="sufee-login d-flex align-content-center flex-wrap fondoscuro">
+  <div class="container">
+    <div class="login-content">
+      <div class="login-logo">
+        <a href="#">
+          <img class="align-content logo" src="assets/images/logoamert.svg" alt="assets/images/logoamert.svg">
+        </a>
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3"></div>
+        <div class="login-form fondo col-md-6">
+          <form (ngSubmit)="onSubmit( f )" #f="ngForm" class="fondo col-md-12" style="padding: 5px;">
+          <div class="form-group">
+            <hr>
+          
+            <span *ngIf="f.submitted && f.controls['nombre'].errors" class="text-danger animated fadeIn">El nombre es
+              obligatorio</span>
+            <div class="form-group col-md-12">
+              <input class="form-control azul" type="text" name="nombre" [(ngModel)]="usuario.nombre" minlength="2" required
+                placeholder="Nombre y apellidos">
+  
+            </div>
+  
+  
+            <span *ngIf="f.submitted && f.controls['email'].errors" class="text-danger animated fadeIn">El correo es
+              obligatorio</span>
+          
+            <div class="form-group col-md-12">
+              <input class="form-control azul" type="email" name="email" [(ngModel)]="usuario.email" required email
+                placeholder="Correo">
+          
+            </div>
+          
+          <span *ngIf="f.submitted && f.controls['telefono'].errors" class="text-danger animated fadeIn">El correo es
+            obligatorio</span>
+  
+          <div class="form-group col-md-6">
+            <input class="form-control azul" type="text" name="telefono" [(ngModel)]="usuario.telefono" required telefono
+              placeholder="Telefono">
+  
+          </div>
+          
+            <span *ngIf="f.submitted && f.controls['password'].errors" class="text-danger animated fadeIn">Al menos 6
+              letras</span>
+            <div class="form-group col-md-6">
+              <input class="form-control azul" type="password" name="password" [(ngModel)]="usuario.password"
+                minlength="6" required
+                placeholder="Contraseña">
+          
+            </div>
+          
+            <div class="flex-sb-m w-full p-t-3 p-b-24">
+              <div class="contact100-form-checkbox">
+                <input [(ngModel)]="recordarme" class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                <label class="label-checkbox100" for="ckb1">
+                  Recordar mi usuario
+                </label>
+              </div>
+          
+              <div>
+                <a routerLink="/login" class="txt1">
+                  ¿Ya tienes cuenta? / Ingresar
+                </a>
+              </div>
+            </div>
+          
+            <div class="container-login100-form-btn m-t-17">
+              <button class="btn btn-primary btn-flat m-b-30 m-t-30" type="submit">
+                Crear cuenta
+              </button>
+            </div>
+          </div>
+          </form>
+  
+        </div>
+        <table>
+          <thead>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let policy of policies">
+
+              <td>{{policy.nombre}}</td>
+              <td>{{policy.email}}</td>
+              <td>{{policy.telefono}}</td>
+              <td>
+                <button (click)="delete(policy.id)">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,7 +1,7 @@
-	<div class="bottom-footer">
+	<div class="bottom-footer" style="padding-top: 0px; margin-bottom: 0px;">
 	  <div class="container">
-	    <div class="bottom-footer-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms">
-	      <ul class="bottom-social-icons">
+	    <div class="bottom-footer-center wow fadeInDown" data-wow-duration="1s" data-wow-delay="300ms" >
+	      <ul class="bottom-social-icons" style="margin-bottom: 0px;">
 	        <li><a target="_blank" [href]="_servicio.info.facebook" class="rk-social-btn ">
 	            <svg style="width: 30px; height:30px;">
 	              <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
@@ -23,10 +23,10 @@
 	      </ul>
 	    </div>
 	    <div class="bottom-footer-left wow fadeInUp" data-wow-duration="1s" data-wow-delay="450ms">
-	      <p><span>Todos los derechos reservados por &#169; </span> <a href="mailTo:{{ _servicio.info.email }}"
-	          class="rk-dark-color "> {{ _servicio.info.email }}</a></p>
-	      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">
-	          {{ anio }} Duck Alive </span>All Right Reserved.</p>
+	      <p><span>Todos los derechos reservados por &#169; </span> {{ anio }} <a href="{{ _servicio.info.pagda }}"
+	          class="rk-dark-color ">{{ _servicio.info.nombre_corto }}</a></p>
+	      <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold"> </span><span class="ae-u-bolder">
+	      {{ _servicio.info.lice }} </span> © {{ _servicio.info.titulo }}</p>
 	    </div>
 	  </div>
 	</div>

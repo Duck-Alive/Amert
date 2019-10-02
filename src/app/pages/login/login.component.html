@@ -1,0 +1,79 @@
+<div class="sufee-login d-flex align-content-center flex-wrap fondoscuro">
+  <div class="container">
+    <div class="login-content">
+      <div class="login-logo">
+      <a href="#">
+        <img class="align-content logo" src="assets/images/logoamert.svg" alt="assets/images/logoamert.svg">
+      </a>
+    </div>
+    <div class="container">
+
+      <div class="row">
+    <div class="login-form">
+
+          <div class="col-md-3"></div>
+    <div class="login-form fondo col-md-6">
+
+
+          <form (ngSubmit)="login( f )" #f="ngForm" class="fondo col-md-12" style="padding: 5px;">
+    
+            <span class="login100-form-title p-b-51">
+              <hr>
+            </span>
+    
+            <span *ngIf="f.submitted && f.controls['telefono'].errors" class="text-danger animated fadeIn">El
+              telefono es obligatorio</span>
+    
+            <div class="form-group col-md-12">
+              <input class="form-control azul" type="tel" name="telefono" [(ngModel)]="usuario.telefono" required
+                telefono
+                placeholder="Telefono">
+    
+              <span class="focus-form-control azul"></span>
+            </div>
+    
+            <span *ngIf="f.submitted && f.controls['password'].errors" class="text-danger animated fadeIn">Al
+              menos 6 letras</span>
+            <div class="form-group col-md-12" data-validate="Password is required">
+              <input class="form-control azul" type="password" name="password" [(ngModel)]="usuario.password" required
+                minlength="6" placeholder="Password">
+              <span class="focus-form-control azul"></span>
+            </div>
+    
+            <div class="form-group">
+              <div class="contact100-form-checkbox">
+                <input [(ngModel)]="recordarme" class="input-checkbox100" id="ckb1" type="checkbox"
+                  name="remember-me">
+                <label class="label-checkbox100" for="ckb1">
+                  Recordar mi usuario
+                </label>
+              </div>
+    
+              <div>
+                <a routerLink="/registro" class="txt1">
+                  ¿No tienes cuenta?
+                </a>
+              </div>
+            </div>
+    
+            <div class="container-login100-form-btn m-t-17">
+              <button class="btn btn-primary btn-flat m-b-30 m-t-30" type="submit">
+                Ingresar
+              </button>
+            </div>
+    
+          </form>
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+    </div>
+  </div>
+<!-- <hr> -->
+</div>
+

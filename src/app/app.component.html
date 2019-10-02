@@ -1,3 +1,22 @@
-<app-header></app-header>
+<div id="preloader">
+  <div id="status">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+</div>
+<div id="misbotones">
+  <button routerLink="login" class="botones1" id="ingreso"><i class="fa fa-sign-in"></i>
+    Ingreso</button>
+  <button routerLink="registro" class="botones2" id="registro"><i class="fa fa-user-plus"></i> Registro</button>
+  <a href="/index.html"><button class="botones3" id="dashboard"><i class="fa fa-dashboard"></i>
+      Inicio</button></a>
+</div>
+
+<!-- <app-header></app-header> -->
 <router-outlet></router-outlet>
 <app-footer></app-footer>

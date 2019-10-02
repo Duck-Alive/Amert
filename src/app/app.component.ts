@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
 import { ProductosService } from './services/productos.service';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,10 @@ import { ProductosService } from './services/productos.service';
 export class AppComponent {
 
   constructor( public infoPaginaService: InfoPaginaService,
-               public productosService: ProductosService ) {
+               public productosService: ProductosService,
+               private db: AngularFirestore ) {
+              const things = db.collection('usuarios').valueChanges();
+              things.subscribe(console.log);
 
   }
 
