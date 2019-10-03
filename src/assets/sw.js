@@ -12,18 +12,8 @@ const INMUTABLE_CACHE = 'inmutable-v1';
 
 const APP_SHELL = [
     '/',
-    'index.html',
-    'css/style.css',
-    'img/favicon.ico',
-    'img/avatars/hulk.jpg',
-    'img/avatars/ironman.jpg',
-    'img/avatars/spiderman.jpg',
-    'img/avatars/thor.jpg',
-    'img/avatars/wolverine.jpg',
-    'js/app.js',
-    'js/sw-utils.js',
-    'js/libs/plugins/mdtoast.min.js',
-    'js/libs/plugins/mdtoast.min.css'
+    'index.html'
+    
 ];
 
 const APP_SHELL_INMUTABLE = [
