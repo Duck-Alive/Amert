@@ -24,7 +24,7 @@ export class ProductosService {
 
     return new Promise(  ( resolve, reject ) => {
 
-      this.http.get('https://dpeluche.com/api/dpelucheInicio.php')
+      this.http.get('https://ovgsoft.com/api/escritorio.php')
           .subscribe( (resp: Producto[]) => {
             this.productos = resp;
             this.cargando = false;
@@ -37,7 +37,7 @@ export class ProductosService {
 
   getProducto( id: string ) {
 
-    return this.http.get(`https://angular-html-25cf9.firebaseio.com/productos/${ id }.json`);
+    return this.http.get(`https://ovgsoft.com/api/escritorio/${ id }.json`);
 
   }
 
